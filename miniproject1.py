@@ -7,7 +7,7 @@ print("------Start-----")
 
 # While loop
 while True:
-  userChoice = input("Guess the target:")
+  userChoice = input("Guess the target or enter Q to quit the game:")
   if(userChoice == "Q"):
     break
 
