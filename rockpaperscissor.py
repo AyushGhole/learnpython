@@ -6,11 +6,16 @@ score = 0
 sysScore = 0
 
 while True : 
-  user_input= input("Enter your choice rock/paper/scissor : ")
-  if(user_input.lower() == choice) : 
-    print("You Won")
-    score += 1
+  user_input= input("Enter your choice rock/paper/scissor and q to quit : ")
+  if(user_input.lower == "q"):
+    print("You scored:", score, "and system score:", sysScore)
+    break
   else:
-    print("Oops! You Lost.")
-    sysScore += 1
+     if(user_input.lower() == choice) : 
+       print("You Won")
+       score += 1
+     else:
+       print("Oops! You Lost.")
+       sysScore += 1
+
 
